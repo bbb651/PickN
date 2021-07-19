@@ -14,13 +14,13 @@ using UnboundLib.Networking;
 
 namespace PickTwoPlugin
 {
-    [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bbb651.rounds.pickn", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin(ModId, ModName, "1.0.2")]
     [BepInProcess("Rounds.exe")]
     public class PickTwo : BaseUnityPlugin
     {
-        private const string ModId = "com.willis.rounds.picktwo";
-        private const string ModName = "Pick Two Cards";
+        private const string ModId = "com.bbb651.rounds.pickn";
+        private const string ModName = "Pick N Cards";
         public static bool ModActive = true;
 
         struct NetworkEventType
@@ -53,7 +53,7 @@ namespace PickTwoPlugin
             {
                 yield return new WaitForSecondsRealtime(0.5f);
                 
-                CardChoiceVisuals.instance.Show(CardChoice_Data.i, true);
+                CardChoiceVisuals.instance.Show(CardChoice_Data.i, DependencyFlags.HardDependencytrue);
                 yield return CardChoice.instance.DoPick(1, CardChoice_Data.LastPickerID, CardChoice_Data.LastPickerType);
             }
 

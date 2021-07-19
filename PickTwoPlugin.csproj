@@ -7,8 +7,8 @@
     <ProjectGuid>{0B154432-85B1-4DCB-96B6-34BEFF2C1C60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PickTwoPlugin</RootNamespace>
-    <AssemblyName>PickTwoPlugin</AssemblyName>
+    <RootNamespace>PickN</RootNamespace>
+    <AssemblyName>PickN</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
